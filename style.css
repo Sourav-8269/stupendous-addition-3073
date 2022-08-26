@@ -1,8 +1,11 @@
 body{
     padding: 0%;
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+#navbar>div p{
+    color: gray;
+}
 #navbar>div{
     display: flex;
     justify-content: space-between;
@@ -157,10 +160,11 @@ h1+hr{
     
 }
 #Fruits>div:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }
 .apple+hr{
-    width: 92%;
+    width: 91%;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -173,12 +177,14 @@ h1+hr{
 .check>button{
     border-radius: 15px;
     height:30px;
-    padding: 5%;
+    padding: 6%;
+    /* margin-right:50px; */
     display: flex;
     align-items: center;
     color:rgb(0, 128, 90);
     border: 1px solid rgb(0, 128, 90);
     margin-right: 15px;
+    background-color: white;
 }
 
 #Fruits>div>img{
@@ -191,4 +197,202 @@ h1+hr{
 }
 #Fruits>div>p,h3{
     margin-left: 15px;
+}   
+#back{
+    position:absolute;
+    width: 40%;
+    margin-top: 13%;
+    margin-left: 5%;
 }
+#ad{
+    display: flex;
+}
+#ad>div:nth-child(2)>h3{
+    width:80%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#ad>div:nth-child(2)>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#ad>div:nth-child(2){
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#ad>div:nth-child(2)>h3{
+    margin-left:-3px;
+}
+#btn{
+    width:50%;
+    /* background-color: red; */
+    border:1px solid rgb(216, 213, 213);
+    border-radius: 25px;
+    display: flex;
+    height:45px;
+    justify-content: space-between;
+}
+#btn>div:nth-child(1){
+    background-color: black;
+    margin-left: 1%;
+    height:85%;
+    width: 60%;
+    color: white;
+    margin-top:4px;
+    border-radius: 20px;
+    font-size: 20px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn>div:nth-child(2){
+    /* background-color: black; */
+    /* margin-left: 1%; */
+    height:85%;
+    width: 60%;
+    color: black;
+    margin-top:2%;
+    border-radius: 20px;
+    font-size: 20px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#btn>div:nth-child(1)>i{
+    color: white;
+}
+#btn>div:nth-child(2)>i{
+    color: black;
+}
+#input-box{
+    width:400px;
+    /* width:75%; */
+    padding:1%;
+    align-items: center;
+    border: 1px solid #a0a0a0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#input-box input{
+    border: none;
+    outline:none;
+    padding: 1rem;   
+    font-size: 20px;
+    width:75%;
+}
+#input-box .prefix {
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#input-box+input{
+    margin-top: 20px;
+    width:79%;
+    /* width:410px; */
+    height: 60px;
+    font-size: 25px;
+    text-transform:uppercase;
+    border-radius: 10px;
+    background-color: teal;
+    color:white;
+    border: none;
+    margin-bottom: 40px;
+}
+#input-box+input+div{
+    display: flex;
+}
+#input-box+input+div>img{
+    /* height: 20px; */
+    /* border: 1px solid red; */
+    height:40px;
+    padding: 2%;
+}
+#input-box+input+div>h2{
+    color: gray;
+    font-weight: lighter;
+}
+#foot{
+    /* border: 1px solid red; */
+    width:100%;
+}
+#footer{
+    padding-bottom: 1%;
+    background-color: #165241;
+    margin-top: -10px;
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    width:100%;
+    justify-content: center ;
+    
+}
+#footer>div>p:nth-child(1){
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#footer>div:nth-child(1)>img{
+    width: 90%;
+}
+#footer>div{
+    margin-left:40px;
+    /* border: 1px solid red; */
+    color: rgb(190, 184, 184);
+}
+#android>img:nth-child(1){
+    
+}
+.android>img:nth-child(1){
+    /* padding: 50%; */
+    /* border: 10px solid red; */
+}
+.android>p:nth-child(4){
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ph{
+    /* border: 1px solid red; */
+    display:grid;
+    grid-template-columns: 50% 50%;
+
+}
+#ph>img:nth-child(1){
+    height: 70%;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+#data{
+    padding: 0%;
+    margin: 0%;
+    background-color: #165241;
+    margin-top: -30px;
+    
+}
+#data>h1{
+    color: white;
+    width: 90%;
+    margin: auto;   
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: normal;
+}
+#data>p{
+    color: rgb(190, 184, 184);
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+#data>hr{
+    border:1px solid rgb(165, 161, 161);
+    width:90%;
+    color:red
+}
+#data>p:nth-child(5){
+    text-align: center;
+    padding-bottom: 30px;
+}
+  
