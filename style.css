@@ -18,6 +18,7 @@ body{
 #navbar>div{
     align-items: center;
     margin:0 30px 0 30px;
+    cursor:pointer;
 }
 #navbar>div>input{
     width:45%;

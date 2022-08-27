@@ -8,14 +8,15 @@
     <link href="style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="navbar">
         <div><img src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="">
            <p><i class="fa-solid fa-location-dot"></i> Pawai</p><input id="search"  placeholder="Find fresh vegetables,fruits and dairy..." ><i id="icon" class="fa-solid fa-magnifying-glass"></i>
-           <p><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
+           <p onclick="cart()"> <i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
            <p><i class="fa-solid fa-credit-card"></i> Credit</p>
-           <p><i class="fa-solid fa-user"></i> Login</p></div>
+           <p onclick="login()" ><i class="fa-solid fa-user"></i> Login</p></div>
     </div>
     <hr>
     <div id="top-section">
@@ -32,11 +33,11 @@
     <div id="best"> 
         <div>
             <img src="https://imagemaster.fraazo.com/fraazo-master/products/BONI11.png?width=256&height=256&format=webp"><p>Onion</p><p>1Kg</p><p>&#8377; 21</p>
-            <button><i class="fa-solid fa-cart-plus"></i> ADD</button>
+            <button onclick="show()"><i class="fa-solid fa-cart-plus"></i> ADD</button>
         </div>
         <div>
             <img src="https://imageprod.fraazo.com/fraazo-prod/images/images/000/006/605/original/data?width=256&height=256&format=webp"><p>Tomato</p><p>1Kg</p><p>&#8377; 28</p>
-            <button><i class="fa-solid fa-cart-plus"></i> ADD</button>
+            <button onclick="show()"><i class="fa-solid fa-cart-plus"></i> ADD</button>
         </div>
     </div>
     <div id="pro">
@@ -118,11 +119,14 @@
             <div id="btn">
                 <div><i class="fa-brands fa-google-play"></i> Android </div><div><i class="fa-brands fa-apple"></i> IPhone</div>
             </div>
+            
             <div id="input-box">
-                <span class="prefix">+91</span>
-                <input type="text" placeholder="Enter Your Mobile number"/>
+                    <span class="prefix">+91</span>
+                    <input id="num" type="text" placeholder="Enter Your Mobile number"/>
+                   
+                
             </div>
-            <input type="submit">
+            <input  id="sub" type="submit" />
             <div>
                 <h2>Available on</h2><img src="https://webasset.fraazo.com/production/googleplaystore.863bf06a3d2d326a5b94.png">
                 <img src="https://webasset.fraazo.com/production/appstore.a8155c5772ea7d80d435.png">
