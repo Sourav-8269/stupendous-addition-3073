@@ -5,10 +5,10 @@ function login(){
     alert("Please Enter your Correct Credentials")
     window.location.href="signup.html";
 }
-function cart(){
-    window.location.href="cart.html";
-}
-// document.querySelector(".add").addEventListener("click",show);
+// function cart(){
+//     window.location.href="cart.html";
+// }
+document.querySelector("#btn").addEventListener("click",show);
 function show(){
     console.log("fun")
 }

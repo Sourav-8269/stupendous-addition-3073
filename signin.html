@@ -97,7 +97,7 @@
         data_arr.map(function(elem,i){
         // console.log(elem)
     //    console.log(elem.email)
-       console.log(s[i].password)
+            console.log(s[i].password)
             if(elem.email==s[i].email){
             // console.log(1)
                 if(elem.password==s[i].password){
@@ -108,9 +108,10 @@
             }else{
                 alert("Wrong Email")
             }
+            
             window.location.href="index.html";
     })
-   
+    // localStorage.removeItem("signin");
         
 }
    

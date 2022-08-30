@@ -396,4 +396,60 @@ h1+hr{
     text-align: center;
     padding-bottom: 30px;
 }
+@media all and (min-width: 651px) and (max-width: 900px) {
+    #top-section{
+        display: grid;
+        grid-template-columns:800px;
+        /* border:1px solid red; */
+        width:90%;
+        justify-content: center;
+        gap:20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #navbar>div{
+        width:100%;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding-top: 10px;
+    }
+    #best{
+        width:90%;
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,20%);
+        gap:20px;
+    }
+    #ad{
+        display: block;
+    }
+    #input-box{
+        width:55%;
+    }
+    #input-box+input{
+        width:57%;
+    }
+    #footer{
+        grid-template-columns: repeat(2,40%);
+        justify-content: space-around;
+    }
+    #ph{
+        display: block;
+        /* border: 1px solid red; */
+        /* display:grid;
+        grid-template-columns: 50% 50%; */
+    
+    }
+    #ph>img:nth-child(2){
+        /* margin-left: -20px; */
+        margin-bottom: -8px;
+    }
+    #data>h1{
+        width: 81%;
+    }
+    #data>p{
+        width:81%;
+    }
+}
   
